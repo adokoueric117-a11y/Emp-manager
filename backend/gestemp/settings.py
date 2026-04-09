@@ -30,7 +30,9 @@ load_dotenv()
 SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG') == 'True'
 
-ALLOWED_HOSTS = ['https://emp-manager-d4sl.onrender.com']
+ALLOWED_HOSTS = ['emp-manager-d4sl.onrender.com',  # Ton adresse Render
+    '127.0.0.1',                     # Pour que ça continue de marcher localement
+    'localhost',]
 
 
 # Application definition
